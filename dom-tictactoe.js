@@ -60,7 +60,7 @@ const checkForWin = () => {
   if(horizontalWin() || verticalWin() || diagonalWin()) {
     // **BONUS** you could make the dismissal of this alert window reset the board...
     setTimeout(function(){window.alert(`Player ${currentMarker} won!`), 500})
-    resetBoard();
+    
     
   } else {
     // if no win, change the marker from X to O, or O to X for the next player.
